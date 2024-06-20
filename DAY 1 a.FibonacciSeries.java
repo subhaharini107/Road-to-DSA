@@ -1,9 +1,16 @@
-//{ Driver Code Starts
-// Initial Template for Java
-import java.io.*;
-import java.util.*;
-// } Driver Code Ends
-// User function Template for Java
+/* Given a number positive number N, find the value of f0 + f1 + f2 +... + fN where fi indicates ith Fibonacci number.
+Remember that f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5,
+Since the answer can be very large, the answer takes modulo with 1000000007 and returned.
+
+Example 1:
+
+Input:
+N = 3
+Output:
+4
+Explanation:
+0 + 1 + 1 + 2  = 4
+*/
 class Solution {
     static long fibSum(long N) {
         long num1=0,num2=1,num3=0,num4=1;
@@ -21,17 +28,5 @@ class Solution {
         }
     }
 }
-//{ Driver Code Starts.
-class GFG {
-    public static void main(String args[]) throws IOException {
-        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.parseInt(read.readLine());
-        while (t-- > 0) {
-            long N = Long.parseLong(read.readLine());
 
-            Solution ob = new Solution();
-            System.out.println(ob.fibSum(N));
-        }
-    }
-}
-// } Driver Code Ends
+          
