@@ -17,7 +17,7 @@ public class Main
 	static int floor(int []arr,int target){
 	    int start=0,end=arr.length-1;
 	    if(target>arr[end]){
-	        System.out.print("No ceil value");
+	        System.out.print("No floor value");
 	    }
 	    while(start<=end){
 	        int middle=start+(end-start)/2;
